@@ -1,0 +1,190 @@
+ /* adding popin fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Common styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    color: #FFFFFF;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-size: 16px;
+    text-align: center;
+  
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button i{
+    margin-left: 8px;
+}
+
+
+/* Header section */
+
+.header-section{
+    padding-left: 156px;
+    padding-right: 124px;
+    background-color: #2D25A0;
+    height: 677px;
+    width: 100%;
+}
+
+/* Navbar */
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 42px;
+    padding-bottom: 67px;
+}
+
+.pages {
+    display: flex;
+    
+}
+
+.pages a{
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 36px;
+}
+
+
+.top-banner{
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.title-section{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   
+}
+
+.title-section h1{
+    font-size: 64px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.title-image{
+    margin-left: 102px;
+}
+.title-image img{
+    width: 556.01px;
+    height: 438px;
+}
+
+@media only screen and (max-width:688px){
+    .header-section{
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+        padding-right: 66px;
+    }
+    
+    .navbar .pages{
+        display: none;
+    }
+
+
+    .top-banner{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .title-section div h1{
+        width: 278px;
+        height: 138px;
+    }
+
+    .title-section h1{
+        font-size: 36px;
+        
+    }
+
+    .title-section .button{
+        margin-top: 30px;
+    }
+}
+    
+    .title-image img{
+        width: 329px;
+        height: 259.17px;
+    }
+
+    .title-image{
+        margin: 0;
+        padding: 50px 15px 15px 60px;
+        
+    }
+
+   
+
+@media only screen and (min-width:689px) and (max-width:992px){
+    .header-section{
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;
+        padding-right: 66px;
+    }
+    .navbar{
+        flex-direction: column;
+        margin-left: 45px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pages{
+        margin-bottom: 25px;;
+    }
+
+    .top-banner{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .title-section h1{
+        font-size: 36px;
+        
+    }
+  
+    
+    .title-image img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .title-image{
+        margin: 0;
+        padding: 50px 15px 15px 60px;
+        
+    }
+
+    .title-section .button{
+        margin-top: 30px;
+    }
+}
