@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 .button {
@@ -98,6 +99,54 @@ body {
     height: 438px;
 }
 
+
+.main-content{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.players{
+    display: grid;
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player img{
+    width: 300px;
+    height: 256px;
+    margin: 15px;
+}
+.player-info{
+    margin: 0 15px 33px 15px;
+    
+}
+.player-name{
+    font-weight: 400;
+    font-size: 26px;
+    color: #18191F;
+    
+    
+}
+.player-description {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 16px;
+    color: #6C6C6C;
+    width: 300px;
+    height: 104px;
+    
+}
+
+/* Responisve styles for mobile devices. */
+
 @media only screen and (max-width:688px){
     .header-section{
         width: 100%;
@@ -105,15 +154,19 @@ body {
         padding-left: 16px;
         padding-right: 66px;
     }
-    
+    .navbar{
+        display: block;
+        margin-left: 250px;
+    }
+   
+
     .navbar .pages{
         display: none;
     }
-
-
+    
     .top-banner{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         
     }
@@ -121,16 +174,15 @@ body {
     .title-section div h1{
         width: 278px;
         height: 138px;
-    }
-
-    .title-section h1{
         font-size: 36px;
         
+        line-height: 50px;
     }
 
     .title-section .button{
         margin-top: 30px;
     }
+   
     .title-image img{
         width: 329px;
         height: 259.17px;
@@ -141,11 +193,20 @@ body {
         padding: 50px 15px 15px 60px;
         
     }
+
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
     
     
 
-   
+  /* Responsive styles for tablets  */
 
 @media only screen and (min-width:689px) and (max-width:992px){
     .header-section{
@@ -171,6 +232,11 @@ body {
         width: 100%;
         
     }
+
+    .title-section {
+        align-items: center;
+    }
+
     .title-section h1{
         font-size: 36px;
         
@@ -190,5 +256,14 @@ body {
 
     .title-section .button{
         margin-top: 30px;
+    }
+
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .players{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
