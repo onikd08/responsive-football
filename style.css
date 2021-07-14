@@ -27,12 +27,16 @@ h2{
     padding: 10px 24px;
     font-size: 16px;
     text-align: center;
+    transition: background-color 2s ease-out 100ms;
   
 }
+.button:hover {
+    background-color: gold;
+  }
 
 .button a{
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 .button i{
@@ -91,6 +95,10 @@ h2{
     font-size: 64px;
     font-weight: 700;
     color: #FFFFFF;
+    transition: color 2s ease-out 100ms
+}
+h1:hover{
+    color: #E02C6D;
 }
 .title-section .button{
     margin-top: 27px;
