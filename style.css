@@ -325,18 +325,16 @@ footer{
     .header-section{
         width: 100%;
         height: 100%;
+        padding-top: 150px;
         padding-left: 16px;
         padding-right: 66px;
     }
     .navbar{
-        display: block;
-        margin-left: 250px;
+        display: none;
     }
    
 
-    .navbar .pages{
-        display: none;
-    }
+    
     
     .top-banner{
         flex-direction: column;
@@ -409,6 +407,11 @@ footer{
 
     .news{
         margin: 20px;
+    }
+
+    .footer-top img {
+        width: 380px;
+        height: 110px;
     }
     
     
